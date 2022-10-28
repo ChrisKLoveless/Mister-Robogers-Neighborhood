@@ -38,23 +38,17 @@ function translateToRobogers(num) {
 
 function submitHandler(event) {
   event.preventDefault();
-
-  const swapValue = numSwap(parseInt(document.getElementById("user-input").value));
-  const result = translateToRobogers(parseInt(document.getElementById("user-input").value));
-  console.log(swapValue);
-  console.log(result);
-
-  document.getElementById("output").innerText = result;
-
-  const reset = document.getElementById("reset-btn");
-  reset.addEventListener("click", function () {
-    document.location.reload();
-  })
+  const userInput = document.querySelector("input#number-input").value;
+  const result = translateToRobogers(parseInt(userInput));    
+  document.getElementById("output").text(result);
 }
 
 window.addEventListener("load", function () {
   let form = this.document.querySelector("form");
 
-  form.addEventListener("submit", submitHandler) 
-});  
-
+  const reset = document.getElementById("reset-btn");
+  reset.addEventListener("click", function () {
+    document.location.reload();
+  });
+    form.addEventListener("submit", submitHandler)
+});
