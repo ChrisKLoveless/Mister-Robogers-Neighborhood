@@ -31,3 +31,7 @@ Expected output: 'No translation....that is NOT a number!'
 Test: "It should return "I'm sorry.... I cannot translate that." if user inputs a number less than 0 or greater than or equal to 999999"
 Code: translateToRobogers(-1, 999999);
 Expected output: 'I'm sorry.... I cannot translate that.'
+
+Test: "It should add function of numSwap to last branch and return the array"
+Code: translateToRobogers(5);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
