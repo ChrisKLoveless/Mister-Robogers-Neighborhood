@@ -36,6 +36,25 @@ function translateToRobogers(num) {
 
 // UI Logic
 
-window.addEventListener("load", function() {
-  
-})
+function submitHandler(event) {
+  event.preventDefault();
+
+  const swapValue = numSwap(parseInt(document.getElementById("user-input").value));
+  const result = translateToRobogers(parseInt(document.getElementById("user-input").value));
+  console.log(swapValue);
+  console.log(result);
+
+  document.getElementById("output").innerText = result;
+
+  const reset = document.getElementById("reset-btn");
+  reset.addEventListener("click", function () {
+    document.location.reload();
+  })
+}
+
+window.addEventListener("load", function () {
+  let form = this.document.querySelector("form");
+
+  form.addEventListener("submit", submitHandler) 
+});  
+
