@@ -1,3 +1,5 @@
+// Business Logic
+
 function numSwap(num) {
   let stringNum = num.toString();
   if (stringNum.includes('3')) {
@@ -31,3 +33,9 @@ function translateToRobogers(num) {
   }
   return arrayString;
 }
+
+// UI Logic
+
+window.addEventListener("load", function() {
+  
+})
