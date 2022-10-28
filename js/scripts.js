@@ -37,7 +37,7 @@ function translateToRobogers(num) {
 // UI Logic
 
 window.addEventListener("load", function() {
-  const form = this.document.querySelector("form");
+  let form = document.querySelector("form");
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -46,7 +46,7 @@ window.addEventListener("load", function() {
 
     const userInput = document.getElementById("number").value;
     console.log(userInput);
-    const result = translateToRobogers(parseInt(userInput));    
+    const result = translateToRobogers(userInput);    
 
     document.getElementById("output").innerText = result;
  
