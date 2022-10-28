@@ -11,14 +11,19 @@
 </head>
 <body>
   <div class="container">
-    <h1>Mister Robogers' Neighborhood</h1>
+    <h1 class="text-center mb-2 pt-4 tile-text">Mister Robogers' Neighborhood</h1>
+
     <form id="user-input">
       <div class="mb-3">
-        <label for="input-number" class="form-label">Input a number</label>
+        <label for="input-number" class="form-label"><strong>Input a number</strong></label>
         <input type="number" class="form-control" id="number-input" aria-describedby="inputBlock">
 
-        <button type="submit" class="btn btn-dark mt-4 mr-2">Submit</button>
+        <button type="submit" class="btn btn-dark mt-4 mr-2">Translate</button>
         <button type="reset" class="btn btn-warning mt-4">Reset</button>
+      </div>
+      <img src="img/roborogers.jpeg">
+      <div id="robotOutput">
+
       </div>
     </form>
   </div>
