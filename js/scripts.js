@@ -36,18 +36,22 @@ function translateToRobogers(num) {
 
 // UI Logic
 
-window.addEventListener("load", function () {
+window.addEventListener("load", function() {
   const form = this.document.querySelector("form");
 
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", function(event) {
     event.preventDefault();
-    const userInput = document.querySelector("input#number").value;
+
+    console.log("form submitted");
+
+    const userInput = document.getElementById("number").value;
     console.log(userInput);
     const result = translateToRobogers(parseInt(userInput));    
-    document.getElementById("robotOutput").text(result);
+
+    document.getElementById("output").innerText = result;
  
   const reset = document.getElementById("reset-btn");
-  reset.addEventListener("click", function () {
+  reset.addEventListener("click", function() {
     document.location.reload();
   });
   })   
