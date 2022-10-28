@@ -19,3 +19,7 @@ Describe: translateToRobogers(num);
 Test: "It should return an array of numbers from 0 to user input"
 Code: translateToRobogers('10');
 Expected Output: [0,1,2,3,4,5,6,7,8,9,10]
+
+Test: "It should return 'No translation....That is not a number!' if user inputs a letter 'a'"
+Code: translateToRobogers('a');
+Expected output: 'No translation....that is NOT a number!'
