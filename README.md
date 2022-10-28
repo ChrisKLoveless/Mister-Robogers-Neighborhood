@@ -20,10 +20,14 @@ Test: "It should return an array of numbers from 0 to user input"
 Code: translateToRobogers('10');
 Expected Output: [0,1,2,3,4,5,6,7,8,9,10]
 
-Test: "It should return 'No translation....That is not a number!' if user inputs a letter 'a'"
+Test: "It should return 'No translation....that is NOT a number!' if user inputs a letter 'a'"
 Code: translateToRobogers('a');
 Expected output: 'No translation....that is NOT a number!'
 
-Test: "It should return 'No translation....That is not a number!' if user inputs any letter"
+Test: "It should return 'No translation....that is NOT a number!' if user inputs any letter"
 Code: translateToRobogers('abcdefghijklmnopqrstuvwxyz');
 Expected output: 'No translation....that is NOT a number!'
+
+Test: "It should return "I'm sorry.... I cannot translate that." if user inputs a number less than 0 or greater than or equal to 999999"
+Code: translateToRobogers(-1, 999999);
+Expected output: 'I'm sorry.... I cannot translate that.'
