@@ -8,3 +8,7 @@ Expected Output: 'Won't you be my neighbor?'
 Test: "It should replace the number 2 with 'Boop!'"
 Code: numSwap('2');
 Expected Output: "Boop!"
+
+Test: "It should replace the number 1 with 'Beep!'"
+Code: numSwap('1')
+Expected Output: "Beep!"
