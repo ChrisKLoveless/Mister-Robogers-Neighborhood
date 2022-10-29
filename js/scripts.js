@@ -37,7 +37,7 @@ function translateToRobogers(num) {
 // UI Logic
 
 window.addEventListener("load", function() {
-  let form = document.querySelector("form");
+  let form = document.getElementById("form");
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
