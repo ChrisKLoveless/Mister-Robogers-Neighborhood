@@ -2,7 +2,7 @@
 
 #### By _**Chris Loveless**_
 
-#### A website to translate a number Mister Roboger' language
+#### A website to translate a number Mister Robogers' language
 
 ## Technologies Used
 
@@ -22,9 +22,7 @@ This is an independent project made to demonstrate proficiency in JavaScript log
 3. Open index.html file in browser
 
 ## Known Bugs
-* Form is not submitting properly
-* Reset button is not functional
-* User output is not displayed 
+* none 
 
 ## Testing:
 
